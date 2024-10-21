@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "warp"
+version = "0.1.0"
+description = ""
+authors = ["Connor Hainje <cmhainje@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+jax = "^0.4.34"
+scipy = "^1.14.1"
+optax = "^0.2.3"
+tqdm = "^4.66.5"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+ipywidgets = "^8.1.5"
+matplotlib = "^3.9.2"
+
+[virtualenvs]
+in-project = true
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
